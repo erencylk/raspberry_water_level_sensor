@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC146650-C5AD-49D4-AFC1-B8B933B569D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication4</RootNamespace>
+    <AssemblyName>WindowsFormsApplication4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonObjectId.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.BinaryConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.BsonObjectIdConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DataSetConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DataTableConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DateTimeConverterBase.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DiscriminatedUnionConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.EntityKeyMemberConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.ExpandoObjectConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.IsoDateTimeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.JavaScriptDateTimeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.KeyValuePairConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.RegexConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.StringEnumConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.VersionConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.XmlNodeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.IJsonLineInfo.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonArrayAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConstructorAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonContainerAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConvert.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverterAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverterCollection.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonDictionaryAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonExtensionDataAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonIgnoreAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonObjectAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonPropertyAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonReaderException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonRequiredAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializationException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializerSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonTextReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonTextWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonValidatingReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonWriterException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.Extensions.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JArray.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JConstructor.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JContainer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JObject.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JProperty.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JPropertyDescriptor.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JRaw.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JsonLoadSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JsonMergeSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JToken.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenEqualityComparer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JValue.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.Extensions.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchema.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaGenerator.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.ValidationEventArgs.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.ValidationEventHandler.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DefaultContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DefaultSerializationBinder.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DiagnosticsTraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DynamicValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ErrorContext.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ErrorEventArgs.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExpressionValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExtensionDataGetter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExtensionDataSetter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IAttributeProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IReferenceResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ITraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonArrayContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonContainerContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonDictionaryContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonDynamicContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonISerializableContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonLinqContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonObjectContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonPrimitiveContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonProperty.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonPropertyCollection.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonStringContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.MemoryTraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.OnErrorAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ReflectionAttributeProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ReflectionValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.SerializationCallback.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.SerializationErrorCallback.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
